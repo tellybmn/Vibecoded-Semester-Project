@@ -38,6 +38,21 @@ Prints a ranked leaderboard of the top 8 projected true contenders and the
 biggest gaps between the contender-score ranking and the official standings,
 and saves the same report to `semester-project/week6_contender_report.txt`.
 
+A pandas/matplotlib version of the same analysis (Phase 4) is available too:
+
+```
+pip install -r requirements.txt
+python3 semester-project/main_pandas.py
+```
+
+This reloads the CSV into a `DataFrame`, recreates the contender score and
+trending flags with vectorized DataFrame operations, saves the ranked
+report as `semester-project/week6_contender_report_pandas.csv`, and saves
+two charts built with `.plot()`:
+`semester-project/top_contenders_chart.png` (bar chart of the top 8
+contender scores) and `semester-project/yardage_vs_turnovers_chart.png`
+(yardage margin vs. turnover differential, colored by playoff status).
+
 ## Project history
 
 This project was built in phases matching the semester's module progression:
