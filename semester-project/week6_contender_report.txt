@@ -18,4 +18,4 @@ Biggest gaps between contender score rank and official rank:
   Commanders   contender rank=16  official rank= 9  gap= -7  TRENDING DOWN
   Cardinals    contender rank=18  official rank=24  gap= +6  TRENDING UP
   Packers      contender rank= 9  official rank= 4  gap= -5  TRENDING DOWN
-  Patriots     contender rank=12  official rank=17  gap= +5  TRENDING UP
+  Broncos      contender rank=21  official rank=16  gap= -5  TRENDING DOWN

@@ -36,13 +36,16 @@ def classify_trend(rank_gap):
 def rank_by_contender_score(teams):
     """Score, rank, and classify every team; return them sorted best-first.
 
+    Sorts by contender score, breaking ties by turnover differential
+    (a team that gets there by taking the ball away more is the better
+    tiebreak winner than one that got the same score from yardage alone).
     Fills in each TeamRecord's `contender_score`, `contender_rank`,
     `rank_gap`, and `trend` fields as a side effect.
     """
     for team in teams:
         team.contender_score = compute_contender_score(team)
 
-    ranked = sorted(teams, key=lambda t: t.contender_score, reverse=True)
+    ranked = sorted(teams, key=lambda t: (t.contender_score, t.to_diff), reverse=True)
     for position, team in enumerate(ranked, start=1):
         team.contender_rank = position
         team.rank_gap = team.rank - team.contender_rank
@@ -51,5 +54,9 @@ def rank_by_contender_score(teams):
 
 
 def biggest_rank_gaps(ranked_teams, count=8):
-    """Return the `count` teams with the largest |official rank - contender rank|."""
-    return sorted(ranked_teams, key=lambda t: abs(t.rank_gap), reverse=True)[:count]
+    """Return the `count` teams with the largest |official rank - contender rank|.
+
+    Ties break by official rank ascending, so a higher-profile (better
+    officially-ranked) team surfaces first among equally-sized gaps.
+    """
+    return sorted(ranked_teams, key=lambda t: (-abs(t.rank_gap), t.rank))[:count]
