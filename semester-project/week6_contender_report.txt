@@ -1,0 +1,21 @@
+=== Week 6 Contender Report ===
+
+Top 8 projected true contenders (by contender score):
+  # 1 Ravens       score=+13.18  record=5-1 (W3)  official rank= 5  TRENDING UP
+  # 2 Cowboys      score=+12.56  record=6-0 (W6)  official rank= 1  steady
+  # 3 Steelers     score=+11.67  record=6-0 (W6)  official rank= 2  steady
+  # 4 Bills        score= +9.45  record=6-0 (W6)  official rank= 3  steady
+  # 5 Eagles       score= +8.12  record=5-1 (W5)  official rank= 6  steady
+  # 6 Rams         score= +5.02  record=4-2 (W1)  official rank=10  TRENDING UP
+  # 7 Chiefs       score= +4.76  record=4-1 (W2)  official rank= 7  steady
+  # 8 Dolphins     score= +3.71  record=3-2 (L1)  official rank=11  TRENDING UP
+
+Biggest gaps between contender score rank and official rank:
+  Panthers     contender rank=26  official rank=14  gap=-12  TRENDING DOWN
+  Giants       contender rank=10  official rank=21  gap=+11  TRENDING UP
+  Bengals      contender rank=17  official rank= 8  gap= -9  TRENDING DOWN
+  Falcons      contender rank=28  official rank=20  gap= -8  TRENDING DOWN
+  Commanders   contender rank=16  official rank= 9  gap= -7  TRENDING DOWN
+  Cardinals    contender rank=18  official rank=24  gap= +6  TRENDING UP
+  Packers      contender rank= 9  official rank= 4  gap= -5  TRENDING DOWN
+  Broncos      contender rank=21  official rank=16  gap= -5  TRENDING DOWN
